@@ -1,0 +1,200 @@
+* {
+    font-family: Montserrat, sans-serif;
+}
+
+
+/* All stuff to do with the title at the top */
+
+@media (min-width: 768px){
+    .title-container { /* Contains all title and nav bar elements */
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+
+.title-container img {
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.title-container h1 {
+    margin-left: 7px;
+}
+
+.title-container ul { /* Contains all nav bar list elements */
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    flex-grow: 1;
+}
+
+.title-container ul li { /* Nav bar list elements */
+    transition: transform 0.3s, color 0.3s;
+    padding-right: 1em;
+}
+
+.title-container ul li:hover { /* Nav bar list elements hover */
+    transform: translateY(-3px);
+}
+
+.title-container ul li a { /* Nav bar links */
+    text-decoration: none;
+    color: black;
+    transition: transform 0.3, color 0.3s, text-decoration 0.3s;
+}
+
+.title-container ul li a:hover { /* Nav bar links hover */
+    text-decoration: underline #1E90FF;
+    color: #1E90FF;
+}
+
+
+
+/* All stuff to do with the main content */
+
+@media (min-width: 768px){
+    .content-container { /* Contains all content elements */
+        display: flex;
+        justify-self: space-evenly;
+        margin-top: 30px;
+    }
+}
+
+.content-container .img-wrapper { /* Attributes for the image wrapper */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.content-container .img-wrapper img { /* Attributes for the image */
+    width: 100%;
+    height: auto;
+}
+
+.content-container .content { /* Wrapper for the text content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.content-container .content p { /* Spacing for the paragraph */
+    margin-right: 5%;
+    margin-left: 3%;
+    text-align: justify;
+}
+
+
+
+/* All stuff to do with the types of services */
+
+.services-title { /* Title for the services */
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.services-container { /* Container for the grid of services */
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: 50% 50%;
+    gap: 3px;
+}
+
+.services-container .services-item-1, /* Formatting for the service items */
+.services-container .services-item-2,
+.services-container .services-item-3,
+.services-container .services-item-4,
+.services-container .services-item-5,
+.services-container .services-item-6,
+.services-container .services-item-7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.services-container .services-item-1 { /* Background images for the service items */
+    background-image: url("img/patio_stones.png");
+}
+
+.services-container .services-item-2 {
+    background-image: url("img/patio.png");
+}
+
+.services-container .services-item-3 {
+    background-image: url("img/sod.png");
+}
+
+.services-container .services-item-4 {
+    background-image: url("img/machine.png");
+}
+
+.services-container .services-item-5 {
+    background-image: url("img/gravel.png");
+}
+
+.services-container .services-item-6 {
+    background-image: url("img/shed.png");
+}
+
+.services-container .services-item-7 {
+    background-image: url("img/water.png");
+}
+
+.services-container .services-item-1 h3 a, /* Formatting for the service item links */
+.services-container .services-item-2 h3 a,
+.services-container .services-item-3 h3 a,
+.services-container .services-item-4 h3 a,
+.services-container .services-item-5 h3 a,
+.services-container .services-item-6 h3 a,
+.services-container .services-item-7 h3 a {
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    border-radius: 5px;
+    padding: 5px;
+    border: white 2px solid;
+
+    transition: color 1s, boarder-color 1s;
+}
+
+.services-container .services-item-1 h3 a:hover, /* Hovering over the service item links */
+.services-container .services-item-2 h3 a:hover,
+.services-container .services-item-3 h3 a:hover,
+.services-container .services-item-4 h3 a:hover,
+.services-container .services-item-5 h3 a:hover,
+.services-container .services-item-6 h3 a:hover,
+.services-container .services-item-7 h3 a:hover {
+    color: black;
+    background-color: white;
+    border-color: black;
+}
+
+
+
+/* All stuff to do with the footer */
+
+.info-email {
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 30px
+}
+
+.info-email a {
+    text-decoration: none;
+    color: black;
+}
+
+.copywrite {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
