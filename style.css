@@ -50,6 +50,40 @@
 }
 
 
+/* All stuff to do with the wecome message */
+
+.welcome-message { /* Contains all welcome message elements */
+    background-image: url("img/garden.png");
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-top: 50px;
+}
+
+.welcome-message .top-text,
+.welcome-message .bottom-text { /* Contains all shared welcome message text elements */
+    text-align: center;
+    color: white;
+    background-color: black;
+    border: white 1px solid;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.welcome-message .top-text { /* Contains all top welcome message text elements */
+    padding-bottom: 0px;
+    padding-top: 30px;
+    border-bottom: white 0px solid;
+}
+
+.welcome-message .bottom-text { /* Contains all bottom welcome message text elements */
+    padding-bottom: 30px;
+    padding-top: 0px;
+    border-top: white 0px solid;
+}
+
 
 /* All stuff to do with the main content */
 
@@ -57,7 +91,6 @@
     .content-container { /* Contains all content elements */
         display: flex;
         justify-self: space-evenly;
-        margin-top: 30px;
     }
 }
 
@@ -88,6 +121,11 @@
     margin-right: 5%;
     margin-left: 3%;
     text-align: justify;
+}
+
+.line-divider {
+    margin-top: 60px;
+    margin-bottom: 100px;
 }
 
 
